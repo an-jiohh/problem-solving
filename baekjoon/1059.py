@@ -22,6 +22,6 @@ else :
         if sn != n :
             count += ln - n
         elif sn == n :
-            count += ln - n - 1
+            count += ln - n - 1 #[sn,n][2,2]은 경우를 없애기 위해 1을 빼준다.
             break
     print(count)
