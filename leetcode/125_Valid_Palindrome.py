@@ -1,4 +1,4 @@
-s = "0P"
+s = "A man, a plan, a canal: Panama"
 s = s.lower()
 cstr = []
 for i in s :
@@ -6,7 +6,5 @@ for i in s :
 rcst = []
 for i in cstr[::-1] :
     rcst.append(i)
-print(rcst)
-print(cstr)
 if cstr == rcst : print(True)
 else : print(False)
