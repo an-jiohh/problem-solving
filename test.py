@@ -1,11 +1,8 @@
-s = "A man, a plan, a canal: Panama"
-strs = []
-for char in s:
-  if char.isalnum():
-      strs.append(char.lower())
+s = ["h","e","l","l","o"]
+left, right = 0, len(s) - 1
+while left < right :
+    s[left], s[right] = s[right], s[left]
+    left += 1
+    right -= 1
 
-while len(strs) > 1:
-    if strs.pop(0) != strs.pop():
-        return False
-
-return True
+print(s)
